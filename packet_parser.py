@@ -85,6 +85,6 @@ def addinfo(framearray, bigarray) :
 	print('ICMPData ' + str(ICMPData))
 	print('')
 	"""
-	bigarray.append([DestinationMAC, SourceMAC, EthernetType, IPVersion, IHL, DSCPECN, PacketLength, Identification, FlagsFragmentOffset, TimeToLive, Protocol, HeaderChecksum, SourceIPAddress, DestinationIPAddress, ICMPType, ICMPCode, ICMPChecksum, ICMPRestofHeader, ICMPDataLength, ICMPData])
+	return bigarray.append([DestinationMAC, SourceMAC, EthernetType, IPVersion, IHL, DSCPECN, PacketLength, Identification, FlagsFragmentOffset, TimeToLive, Protocol, HeaderChecksum, SourceIPAddress, DestinationIPAddress, ICMPType, ICMPCode, ICMPChecksum, ICMPRestofHeader, ICMPDataLength, ICMPData])
 	
 #parse(InputFile)
