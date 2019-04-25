@@ -42,6 +42,12 @@ def main():
                 rprecv += 1                                     #of echo replies recieved
                 totrpdata += int(packet[18])                    #Total echo reply data recieved
                 bytesrecv += int(packet[18]) + 42               #Total bytes received
+            #Average Ping Round Trip Time
+            #Echo Request Throughput (kB/sec)
+            #Echo Request Goodput (kB/sec)
+            #Average Reply Delay (microseconds)
+            #Average number of Hops per Echo Request
+            
         return
 
 if __name__ == '__main__':
