@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 from packet_parser import *                                 #Adds Elliots packet parser
-from Packet_Filtering import *                               #When I get Jacks code, import that too
+from packet_filtering import *                               #When I get Jacks code, import that too
 
 files = ['Node1.txt','Node2.txt','Node3.txt','Node4.txt']       #List of files with the packet data we want
 
@@ -47,7 +47,7 @@ def main():
             #Echo Request Goodput (kB/sec)
             #Average Reply Delay (microseconds)
             #Average number of Hops per Echo Request
-            
+
         return
 
 if __name__ == '__main__':
