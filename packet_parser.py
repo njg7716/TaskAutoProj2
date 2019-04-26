@@ -6,7 +6,7 @@ def parse(InputFile) :
     #print 'called parse function in packet_parser.py'
     f = open(InputFile)
     line = f.readline()
-    while line:
+    while line and line != '':
         if line != '\n' and line != '':
             line = f.readline()
             line = line.split()
