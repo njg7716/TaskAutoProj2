@@ -33,11 +33,10 @@ def parse(InputFile) :
                     if i != '':
                         buildarray.append(i)
                 line = f.readline()
-            line = f.readline()
             #print(buildarray)
             addinfo(buildarray, bigarray, time)
         #line = f.readline()
-        #line = f.readline()
+        line = f.readline()
     f.close()
     #print(bigarray)
     return(bigarray)
