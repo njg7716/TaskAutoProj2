@@ -13,7 +13,6 @@ def read(f):
 
         space = "\n"
         clue = open('goodstuff.txt','w')
-        clue.write(space)
 
         while h < size:
                 if(line.find("No.") == 0):
