@@ -5,7 +5,6 @@ def read(f):
                 for i, l in enumerate(flie):
                         pass
         size = i + 1
-        print size
         h = 0
 
         f = open(f,'r')
@@ -19,8 +18,6 @@ def read(f):
         while h < size:
                 if(line.find("No.") == 0):
                         line = f.readline().strip()
-                        #print line
-                        #print line.find("Echo (ping) reply")
                         if(line.find("Echo (ping) reply") != -1 or line.find("Echo (ping) request") != -1):
                                 g = 0
                                 while True:
@@ -31,15 +28,4 @@ def read(f):
                                                 break
                                         g += 1
                 line = f.readline().strip()
-
-                #print line
                 h += 1
-
-
-
-
-
-hold = sys.argv[1]
-
-read(hold)
-
