@@ -22,12 +22,17 @@ def read(f):
                                 g = 0
 				clue.write(No+space)
                                 while True:
-                                        clue.write(line+space)
-                                        line = f.readline().strip()
-                                        if(len(line) == 0 and g > 1):
-                                                clue.write(space)
-                                                break
-                                        g += 1
+					if(g == 0):
+				                clue.write(line)
+						g += 1
+						line = f.readline().strip()
+					else:
+                                		clue.write(line+space)
+				        	line = f.readline().strip()
+                                        	if(len(line) == 0 and g > 1):
+                                                	clue.write(space)
+                                                	break
+                                        	g += 1
                 line = f.readline().strip()
 
                 #print line
