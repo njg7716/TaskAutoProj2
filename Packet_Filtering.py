@@ -17,7 +17,7 @@ def read(f):
         
         while h < size:
                 if(line.find("No.") == 0):
-                        line = f.readline().strip()
+                        line = f.readline()
                         if(line.find("Echo (ping) reply") != -1 or line.find("Echo (ping) request") != -1):
                                 g = 0
 				clue.write(No+space)
