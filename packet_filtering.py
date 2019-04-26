@@ -37,12 +37,3 @@ def read(f):
 
                 #print line
                 h += 1
-
-
-
-
-
-hold = sys.argv[1]
-
-read(hold)
-
