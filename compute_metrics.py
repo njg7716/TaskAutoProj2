@@ -27,8 +27,13 @@ def main():
             ip = '192.168.200.1'
         elif f == 'Node4.txt':
             ip = '192.168.200.2' 
+        print('Starting filter.')
         read(f)                                                     #pass f through Jacks functions
+        print('Filter Done.')
+        print('Starting to parse.')
         packets = parse('goodstuff.txt')                            #Use Jacks output with elliots parse function
+        print('Done Parsing.')
+        exit()
         while i < len(packets):
             if packets[i][14] == '8' and packets[i][12]==ip:
                 rqsent += 1                                         #of echo requests sent (type 8)
